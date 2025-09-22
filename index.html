@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploradores Tech - Inclusão Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .site-title {
+            font-size: 3.5vw;
+            font-weight: 900;
+            color: #fc575e;
+            text-align: center;
+            margin-top: 3vw;
+            margin-bottom: 3vw;
+            letter-spacing: 2px;
+            text-shadow: 0 4px 24px #185a9d40;
+        }
+        .nav-bottom {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            margin: 5vw 0 3vw 0;
+        }
+        .nav-bottom .nav-btn {
+            font-size: 1.3rem;
+            padding: 0.8rem 2.2rem;
+        }
+        @media (max-width: 900px) {
+            .site-title {
+                font-size: 1.25rem;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+            .nav-bottom {
+                margin: 2.5rem 0 1.5rem 0;
+            }
+            .nav-bottom .nav-btn {
+                font-size: 1rem;
+                padding: 0.5rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="site-title">Exploradores Tech</div>
+    <nav class="nav-bottom">
+        <a class="nav-btn active" aria-current="page" href="index.html">Home</a>
+        <a class="nav-btn" href="material-estudo.html">Treinamentos</a>
+        <a class="nav-btn" href="quiz.html">Quiz</a>
+        <a class="nav-btn" href="contato.html">Contato</a>
+    </nav>
+    <main>
+        <section class="modulo-detalhe">
+            <h2>Bem-vindo à Plataforma de Inclusão Digital</h2>
+            <p>Aprenda programação do zero, de forma acessível, divertida e com rigor acadêmico. Nosso objetivo é democratizar o acesso ao conhecimento digital para todas as idades!</p>
+            <ul>
+                <li>Material didático completo e atualizado</li>
+                <li>Conteúdo focado em Python e lógica de programação</li>
+                <li>Quiz interativo para testar seus conhecimentos</li>
+                <li>Design responsivo e acessível</li>
+            </ul>
+            <button class="cta-btn" onclick="window.location.href='material-estudo.html'">Comece a Estudar Agora</button>
+        </section>
+    </main>
+    <footer class="footer-vibrante">
+        Exploradores Tech &copy; 2025 &mdash; Inclusão Digital para Todos
+    </footer>
+</body>
+</html>

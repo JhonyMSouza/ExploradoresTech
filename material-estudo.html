@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material de Estudo - Exploradores Tech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .site-title {
+            font-size: 3.5vw;
+            font-weight: 900;
+            color: #fc575e;
+            text-align: center;
+            margin-top: 3vw;
+            margin-bottom: 3vw;
+            letter-spacing: 2px;
+            text-shadow: 0 4px 24px #185a9d40;
+        }
+        .nav-bottom {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            margin: 5vw 0 3vw 0;
+        }
+        .nav-bottom .nav-btn {
+            font-size: 1.3rem;
+            padding: 0.8rem 2.2rem;
+        }
+        @media (max-width: 900px) {
+            .site-title {
+                font-size: 1.25rem;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+            .nav-bottom {
+                margin: 2.5rem 0 1.5rem 0;
+            }
+            .nav-bottom .nav-btn {
+                font-size: 1rem;
+                padding: 0.5rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="site-title">Material de Estudo</div>
+    <nav class="nav-bottom">
+        <a class="nav-btn" href="index.html">Home</a>
+        <a class="nav-btn active" aria-current="page" href="material-estudo.html">Material de Estudo</a>
+        <a class="nav-btn" href="quiz.html">Quiz</a>
+        <a class="nav-btn" href="contato.html">Contato</a>
+    </nav>
+    <main>
+        <section class="modulo-detalhe">
+            <h2>Estudo de Programação e Inclusão Digital</h2>
+            <p>Explore os principais conceitos de programação, lógica computacional e Python, com exemplos práticos e linguagem acessível.</p>
+            <ul>
+                <li>O que é programação?</li>
+                <li>Por que aprender Python?</li>
+                <li>História e aplicações da linguagem</li>
+                <li>Conceitos básicos: variáveis, operadores, estruturas de decisão e repetição</li>
+                <li>Exemplos práticos e exercícios</li>
+            </ul>
+            <div style="margin: 2rem 0;">
+                <h3>Materiais em PDF</h3>
+                <button class="cta-btn" id="abrir-pdfs" type="button" style="margin-bottom:1rem;">Acessar PDFs das Aulas</button>
+                <div id="pdf-links" style="display:none; flex-wrap:wrap; gap:0.5rem; margin-top:1rem;">
+                    <a class="cta-btn" href="pdf/arquivo.pdf" target="_blank" rel="noopener">Aula 1</a>
+                    <a class="cta-btn" href="pdf/arquivo2.pdf" target="_blank" rel="noopener">Aula 2</a>
+                    <a class="cta-btn" href="pdf/arquivo3.pdf" target="_blank" rel="noopener">Aula 3</a>
+                    <a class="cta-btn" href="pdf/arquivo4.pdf" target="_blank" rel="noopener">Aula 4</a>
+                    <a class="cta-btn" href="pdf/arquivo5.pdf" target="_blank" rel="noopener">Aula 5</a>
+                    <a class="cta-btn" href="pdf/arquivo6.pdf" target="_blank" rel="noopener">Aula 6</a>
+                </div>
+            </div>
+            <button class="cta-btn" onclick="window.location.href='modulo-programacao.html'">Acessar Módulo Programação</button>
+        </section>
+    </main>
+    <footer class="footer-vibrante">
+        Exploradores Tech &copy; 2025 &mdash; Material de Estudo
+        <script>
+        // Exibe ou oculta os links dos PDFs ao clicar no botão
+        document.addEventListener('DOMContentLoaded', function() {
+            var btn = document.getElementById('abrir-pdfs');
+            var links = document.getElementById('pdf-links');
+            if(btn && links) {
+                btn.addEventListener('click', function() {
+                    if(links.style.display === 'none' || links.style.display === '') {
+                        links.style.display = 'flex';
+                        btn.textContent = 'Fechar PDFs das Aulas';
+                    } else {
+                        links.style.display = 'none';
+                        btn.textContent = 'Acessar PDFs das Aulas';
+                    }
+                });
+            }
+        });
+        </script>
+    </footer>
+</body>
+</html>

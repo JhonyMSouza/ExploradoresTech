@@ -1,0 +1,126 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #eee;
+    min-height: 100vh;
+    color: #222;
+}
+.site-title, .header-vibrante h1 {
+    color: #fff;
+    background: #444;
+    padding: 2rem 0 1rem 0;
+    font-weight: 900;
+    text-shadow: 0 2px 12px #222;
+}
+.header-vibrante {
+    background: #444;
+    color: #fff;
+    padding: 0.5rem 0 0.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav ul, .nav-bottom {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #666;
+}
+.nav-btn {
+    background: #666;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0.5rem 1.2rem;
+    margin: 0 0.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s, color 0.3s;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.nav-btn.active, .nav-btn[aria-current="page"] {
+    background: #444;
+    color: #fff;
+    cursor: default;
+    box-shadow: 0 2px 12px #222;
+}
+.nav-btn:hover {
+    background: #222;
+    color: #fff;
+}
+main {
+    max-width: 900px;
+    margin: 2rem auto 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+.modulo-detalhe h2 {
+    color: #222;
+    font-size: 2rem;
+    margin-top: 0;
+}
+.modulo-detalhe ul {
+    margin: 1rem 0 1rem 1.5rem;
+    padding: 0;
+}
+.modulo-detalhe li {
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+}
+.modulo-detalhe blockquote {
+    background: #666;
+    color: #fff;
+    border-left: 6px solid #444;
+    padding: 1em;
+    border-radius: 8px;
+    margin: 1.5em 0;
+    font-size: 1.1rem;
+}
+.cta-btn {
+    background: #444;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: background 0.3s;
+}
+.cta-btn:hover {
+    background: #222;
+}
+.footer-vibrante {
+    background: #444;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #222;
+    font-size: 1rem;
+    border-radius: 0 0 18px 18px;
+    margin-top: 2rem;
+}
+@media (max-width: 900px) {
+    main {
+        max-width: 98vw;
+        padding: 0.5rem;
+    }
+    .site-title, .header-vibrante h1 {
+        font-size: 2rem;
+    }
+    .modulo-detalhe h2 {
+        font-size: 1.3rem;
+    }
+}

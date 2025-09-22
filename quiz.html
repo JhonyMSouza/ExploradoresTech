@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Exploradores Tech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .site-title {
+            font-size: 3.5vw;
+            font-weight: 900;
+            color: #fc575e;
+            text-align: center;
+            margin-top: 3vw;
+            margin-bottom: 3vw;
+            letter-spacing: 2px;
+            text-shadow: 0 4px 24px #185a9d40;
+        }
+        .nav-bottom {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            margin: 5vw 0 3vw 0;
+        }
+        .nav-bottom .nav-btn {
+            font-size: 1.3rem;
+            padding: 0.8rem 2.2rem;
+        }
+        @media (max-width: 900px) {
+            .site-title {
+                font-size: 1.25rem;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+            .nav-bottom {
+                margin: 2.5rem 0 1.5rem 0;
+            }
+            .nav-bottom .nav-btn {
+                font-size: 1rem;
+                padding: 0.5rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="site-title">Quiz</div>
+    <nav class="nav-bottom">
+        <a class="nav-btn" href="index.html">Home</a>
+        <a class="nav-btn" href="material-estudo.html">Treinamentos</a>
+        <a class="nav-btn active" aria-current="page" href="quiz.html">Quiz</a>
+        <a class="nav-btn" href="contato.html">Contato</a>
+    </nav>
+    <main>
+        <section class="modulo-detalhe" style="color:#111;">
+            <h2 style="color:#222;">Teste seus conhecimentos!</h2>
+            <div id="score-board" style="margin-bottom:1rem;font-weight:bold;">Pontuação: <span id="score">0</span> | Erradas: <span id="wrong-score">0</span></div>
+            <button class="cta-btn" id="start-quiz">Iniciar Quiz</button>
+            <div id="quiz-container" style="margin-top:2rem;"></div>
+        </section>
+    </main>
+    <footer class="footer-vibrante">
+        Exploradores Tech &copy; 2025 &mdash; Quiz de Programação
+    </footer>
+    <script src="js/quiz.js" defer></script>
+</body>
+</html>

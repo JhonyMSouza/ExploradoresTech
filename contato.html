@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Exploradores Tech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .site-title {
+            font-size: 3.5vw;
+            font-weight: 900;
+            color: #fc575e;
+            text-align: center;
+            margin-top: 3vw;
+            margin-bottom: 3vw;
+            letter-spacing: 2px;
+            text-shadow: 0 4px 24px #185a9d40;
+        }
+        .nav-bottom {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            margin: 5vw 0 3vw 0;
+        }
+        .nav-bottom .nav-btn {
+            font-size: 1.3rem;
+            padding: 0.8rem 2.2rem;
+        }
+        @media (max-width: 900px) {
+            .site-title {
+                font-size: 1.25rem;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+            .nav-bottom {
+                margin: 2.5rem 0 1.5rem 0;
+            }
+            .nav-bottom .nav-btn {
+                font-size: 1rem;
+                padding: 0.5rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="site-title">Contato</div>
+    <nav class="nav-bottom">
+        <a class="nav-btn" href="index.html">Home</a>
+        <a class="nav-btn" href="material-estudo.html">Treinamentos</a>
+        <a class="nav-btn" href="quiz.html">Quiz</a>
+        <a class="nav-btn active" aria-current="page" href="contato.html">Contato</a>
+    </nav>
+    <main>
+        <section class="modulo-detalhe">
+            <h2>Fale Conosco</h2>
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required style="width:100%;max-width:400px;"><br><br>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required style="width:100%;max-width:400px;"><br><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" required style="width:100%;max-width:400px;"></textarea><br><br>
+                <button class="cta-btn" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer-vibrante">
+        Exploradores Tech &copy; 2025 &mdash; Contato
+    </footer>
+</body>
+</html>
